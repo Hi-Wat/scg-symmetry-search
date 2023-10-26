@@ -4,21 +4,35 @@ Search the symmetry-adapted tensors based on the spin space/Shubnikov groups for
 
 ## Preparation
 
-The program consisting of Julia(`.jl`) files depends on `spglib` and `spinspg` packages of Python.
+The programs consisting of Julia(`.jl`) files are on top of `spglib` and `spinspg` packages developed in Python language.
 
 1. prepare Julia and Python3 environment in your machine.
 
-`scg-symmetry-search` also depends on the `SymPy` of Python.
+Note that `spinspg` requires the Python interpreter, `Python>=3.8.0`.  
+REF : https://pypi.org/project/spinspg/
 
+
+Install the required packages for Python.
 ```
-> pip install sympy
-> pip install spinspg # which automatically install spglib
+# recommend to use pip in installation of packages
+# > sudo apt install python3-pip
+> python3 -m pip install sympy
+> python3 -m pip install pymatgen
+> python3 -m pip install spinspg
 ```
 
-2. 
+Julia installation should be `>=1.8.5`  
+To compute the program, install the follwing Julia packages
+```
+> julia 
+julia> ]
+Pkg> add LinearAlgebra
+Pkg> add PyCall
+Pkg> add Optim
+Pkg> add SymPy
+```
 
-
-3. switch default interpreter for Python called in Julia 
+2. switch default interpreter for Python called in Julia 
 
 ```
 > julia
@@ -29,12 +43,12 @@ julia > ]
 Pkg > build PyCall
 julia > PyCall.python # check the python interpreter changed
 ```
-Note that PyCall.jl currently does not call the python executer prepared in virtual environment through `conda create`.
+Note that PyCall.jl currently does not call the python interpreter prepared in virtual environment through `conda create` (as of 2023/07).
 
 
 ## Introduction 
 
-Sample cases for searching symmetry-adapted tensors are prepared by `sample.ipynb`. 
+Samples for searching symmetry-adapted tensors are prepared in `sample.ipynb`. 
 
 
 
@@ -55,4 +69,7 @@ If you use scg-symmetry-search in your research, please cite `spglib`, `spinspg`
 }
 ```
 
+## Licence 
+
+The program 
 
