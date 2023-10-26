@@ -71,5 +71,5 @@ If you use scg-symmetry-search in your research, please cite `spglib`, `spinspg`
 
 ## Licence 
 
-The program 
+ `scg-symmetry-search` is released under a BSD 3-clause license.
 
