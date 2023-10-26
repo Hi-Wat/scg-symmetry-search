@@ -22,7 +22,7 @@ Install the required packages for Python.
 ```
 
 Julia installation should be `>=1.8.5`  
-To compute the program, install the follwing Julia packages
+To compute the program, install the following Julia packages
 ```
 > julia 
 julia> ]
