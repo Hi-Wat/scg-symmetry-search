@@ -48,8 +48,8 @@ Note that PyCall.jl currently does not call the python interpreter prepared in v
 
 ## Introduction 
 
-Samples for searching symmetry-adapted tensors are prepared in `sample.ipynb`. 
-
+Samples for searching symmetry-adapted tensors are prepared in `sample.ipynb`.  
+One can compute program by the following `.ipynb` in Google Colaboratory : [Jupyter notebook in Colab](https://colab.research.google.com/drive/1RVzaDS8wR7Iv-o3sQjxlM9WqUtCQmHgN?usp=sharing)
 
 
 
